@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".activity.MainActivity"
+  >
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/postImgKeyValueRequest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="封装之前使用"
+    android:onClick="RetrofitRxJavaRequet"
+    android:layout_marginTop="20dp"
+    android:textColor="#000"
+    android:textSize="16sp"
+    />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/getRequet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="封装Get请求"
+    android:onClick="GetRequet"
+    android:layout_marginTop="20dp"
+    android:textColor="#000"
+    app:layout_constraintTop_toBottomOf="@+id/postImgKeyValueRequest"
+    android:textSize="16sp"
+    android:textAllCaps="false"
+    />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/postKeyValueRequest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="封装Post请求"
+    android:onClick="PostKeyValueRequet"
+    android:layout_marginTop="20dp"
+    android:textColor="#000"
+    android:textSize="16sp"
+    android:textAllCaps="false"
+    app:layout_constraintTop_toBottomOf="@+id/getRequet"
+    />
+
+  <android.support.v7.widget.AppCompatButton
+    android:id="@+id/getImgRequest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="封装下载图片"
+    android:onClick="GetImgRequet"
+    android:layout_marginTop="20dp"
+    android:textColor="#000"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@+id/postKeyValueRequest"
+    />
+
+
+</android.support.constraint.ConstraintLayout>
